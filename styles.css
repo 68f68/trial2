@@ -1,0 +1,110 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial, sans-serif';
+    background-color: #c0f5e5;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #005b44;
+    padding: 10px 20px;
+    color: white;
+}
+
+.logo {
+    height: 50px;
+}
+
+.project-name {
+    font-size: 1.5em;
+}
+
+.hamburger-menu {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #055b44;
+    color: white;
+    z-index: 1000;
+    transition: right 0.3s ease;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul li {
+    padding: 15px;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu.active {
+    right: 0;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.carousel-slide {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+
+.carousel-slide.active {
+    display: block;
+}
+
+.button-container {
+    margin: 20px 0;
+}
+
+.button-container button {
+    background-color: #055b44;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.button-container button:hover {
+    background-color: #3ecc8e;
+}
+
+.info {
+    display: none;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.info.active {
+    display: block;
+}

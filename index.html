@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مشروع الحديقة المصغرة للتنمية المستدامة</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header class="toolbar">
+        <img src="images/logo3.png" alt="Logo" class="logo">
+        <h1 class="project-name">مشروع الحديقة المصغرة للتنمية المستدامة</h1>
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav id="menu" class="menu">
+            <ul>
+                <li><a href="#" onclick="showInfo('groupMembers')">أعضاء الفريق</a></li>
+                <li><a href="#" onclick="showInfo('projectOverview')">نظرة عامة عن المشروع</a></li>
+                <li><a href="path/to/project-research.pdf" target="_blank">البحث</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="carousel-container">
+        <img src="images/chia4.jpg" class="carousel-slide active" alt="Chia Plant 1">
+        <img src="images/chia2.jpg" class="carousel-slide" alt="Chia Plant 2">
+        <img src="images/chia3.jpg" class="carousel-slide" alt="Chia Plant 3">
+    </div>
+
+    <div class="button-container">
+        <button onclick="showInfo('overview')">نظرة عامة</button>
+        <button onclick="showInfo('origin')">الأصل</button>
+        <button onclick="showInfo('care')">إرشادات العناية</button>
+        <button onclick="showInfo('funFact')">معلومة ممتعة</button>
+    </div>
+
+    <div id="overview" class="info">
+        <h3>نظرة عامة</h3>
+        <p>نباتات الشيا هي نباتات مزهرة من عائلة النعناع، وهي موطنها الأصلي أمريكا الجنوبية.</p>
+    </div>
+    <div id="origin" class="info">
+        <h3>الأصل</h3>
+        <p>تنحدر نباتات الشيا من أمريكا الجنوبية، حيث كانت تزرع منذ العصور القديمة في المكسيك وبوليفيا والأرجنتين.</p>
+    </div>
+    <div id="care" class="info">
+        <h3>إرشادات العناية</h3>
+        <p>
+            تحتاج نباتات الشيا إلى الكثير من الشمس وتربة جيدة التصريف. يُفضل الري بانتظام، ولكن يجب تجنب الرطوبة الزائدة.
+            <br><br>
+            <strong>كيفية الزراعة:</strong> لزرع بذور الشيا، يمكنك ببساطة نثر البذور على سطح التربة والضغط عليها بلطف. لا حاجة لتغطية البذور بالتربة.
+            <br><br>
+            <strong>مدة النمو:</strong> تبدأ نباتات الشيا بالنمو في غضون 7 إلى 14 يومًا. يمكن أن تصل إلى النضج الكامل خلال 90 إلى 120 يومًا.
+        </p>
+    </div>
+    <div id="funFact" class="info">
+        <h3>معلومة ممتعة</h3>
+        <p>بذور الشيا غنية بالألياف وأحماض أوميغا-3 الدهنية، وتعتبر غذاءً ممتازاً للعديد من الفوائد الصحية.</p>
+    </div>
+
+    <div id="groupMembers" class="info">
+        <h3>أعضاء الفريق</h3>
+        <ul>
+            <li> فريدة مدكور</li>
+            <li> ريم حاتم</li>
+            <li>هاجر جاد </li>
+            <li> دعاء محمد</li>
+            <li>ساره شاكر</li>
+            <li>ساره سعد</li>
+            <li>سما فراج</li>
+        </ul>
+    </div>
+    <div id="projectOverview" class="info">
+        <h3>نظرة عامة عن المشروع</h3>
+        <p>الهدف الرئيسي من هذا المشروع هو إنشاء حديقة مصغرة مستدامة وتعليمية تعزز الوعي البيئي وممارسات العيش المستدامة بين الطلاب والمجتمع. ستعمل هذه الحديقة كمنصة تعليمية عملية لفهم بيولوجيا النباتات، وتقنيات البستنة المستدامة، وأهمية التوازن البيئي.</p>
+        <p>مشروع الحديقة المصغرة للتنمية المستدامة هو مبادرة شاملة تجمع بين البستنة العملية والابتكار الرقمي لتعزيز الاستدامة والتعليم البيئي. من خلال دمج التكنولوجيا والتعلم العملي، يهدف المشروع إلى إلهام جيل جديد من الأفراد الواعيين بيئيًا.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
